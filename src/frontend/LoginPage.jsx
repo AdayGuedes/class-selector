@@ -23,7 +23,7 @@ export default function LoginPage() {
         setError("Credenciales inválidas. Por favor, inténtelo de nuevo.");
       }
     } catch (error) {
-      setError("Error al iniciar sesión. Por favor, inténtelo de nuevo.");
+      setError(error.message);
     }
   }
 

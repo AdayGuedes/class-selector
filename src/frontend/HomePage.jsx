@@ -32,7 +32,7 @@ export default function HomePage() {
           window.location.href = "login.html";
         }
       } catch (error) {
-        setError("Token invalido");
+        setError(error.message);
       }
     }
     cargarDatos();

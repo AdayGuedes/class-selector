@@ -1,3 +1,4 @@
+/* global process */
 import Fastify from "fastify";
 import dbPlugin from "./plugins/db.js";
 import authPlugin from "./plugins/auth.js";
