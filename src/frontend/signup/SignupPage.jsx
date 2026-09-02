@@ -22,7 +22,7 @@ export default function SignupPage() {
         setError(data.message);
       }
     } catch (error) {
-      setError("Error al registrar el usuario. Por favor, inténtelo de nuevo");
+      setError(error.message);
     }
   }
 

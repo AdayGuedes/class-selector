@@ -17,5 +17,12 @@ export default defineConfig({
   build: {
     // place built files at project root /dist when building from src/frontend
     outDir: "../../dist",
+    rollupOptions: {
+      input: {
+        login: "src/frontend/login.html",
+        home: "src/frontend/home.html",
+        signup: "src/frontend/signup/signup.html",
+      },
+    },
   },
 });
